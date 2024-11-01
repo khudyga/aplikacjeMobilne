@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/logIn"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_below="@+id/label"
+        android:id="@+id/et_login"
+        android:hint="Login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login"
+        android:layout_marginLeft="60dp"
+        android:text="Remember me" />
+
+    <EditText
+        android:layout_below="@+id/checkBox"
+        android:id="@+id/et_password"
+        android:hint="Password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:backgroundTint="@color/pink"
+        />
+
+</RelativeLayout>
+
+<!-- PARENT
+android:layout_alignParentTop="true"
+android:layout_alignParentBottom="true"
+android:layout_alignParentEnd="true"
+android:layout_alignParentStart="true"
+android:layout_alignParentLeft="true"
+android:layout_alignParentRight="true"
+android:layout_centerInParent="true"
+ -->
+
+
+<!-- ID
+android:layout_alignTop="@+id/cos"
+android:layout_alignBottom="@+id/cos"
+android:layout_alignLeft="@+id/cos"
+android:layout_alignRight="@+id/cos"
+
+android:layout_below="@+id/cos"
+android:layout_above="@+id/cos"
+
+android:layout_alignStart="@+id/cos" - wyrównanie do np lewej krawedzi
+android:layout_alignEnd="@+id/cos"
+
+android:layout_toStartOf="@+id/cos" - umieszczenie po np lewej stronie
+android:layout_toEndOf="@+id/cos"
+android:layout_toLeftOf="@+id/cos"
+android:layout_toRightOf="@+id/cos"
+ -->
+
+<!-- TRUE / FALSE
+android:layout_centerVertical="true"
+android:layout_centerHorizontal="true"
+-->
