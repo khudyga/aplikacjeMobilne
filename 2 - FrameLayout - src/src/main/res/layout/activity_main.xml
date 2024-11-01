@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/button"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center|end"
+        android:backgroundTint="@color/dark_pink"
+        android:text="!!!"
+        />
+
+</FrameLayout>
+
+<!-- USTAWIANIE NA SOBIE -->
+<!-- WYKORZYSTUJEMY LAYOUT GRAVUTY A NIE SAMO GRAVITY -->
+<!-- JAK CHCEMY GRAVITY TO MUSIMY USTALIC ROZMIAR ZEBY NIE BYL CALY MATCH PARENT-->
