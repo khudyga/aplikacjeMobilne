@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liczba"
+        android:hint="@string/wprowad_temperatur"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/pink"
+        android:textColorHint="@color/lightPink"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/przelicz_na_fahrenheity"
+            android:onClick="fahren"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/pink"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/przelicz_na_celsjusze"
+            android:onClick="cels"
+            android:backgroundTint="@color/pink"
+
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temperatura_wynosi"
+            android:textColor="@color/pink"
+            android:layout_margin="10dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/wynik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:layout_margin="10dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

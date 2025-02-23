@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">23-02-2025 2</string>
+    <string name="wprowad_temperatur">Wprowadź temperaturę</string>
+    <string name="przelicz_na_fahrenheity">Przelicz na Fahrenheity</string>
+    <string name="przelicz_na_celsjusze">Przelicz na Celsjusze</string>
+    <string name="temperatura_wynosi">Temperatura wynosi:</string>
+</resources>
